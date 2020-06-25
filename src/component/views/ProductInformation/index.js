@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { FormattedMessage } from 'react-intl';
 import firstImg from './first.PNG';
 import secondImg from './second.PNG';
@@ -13,7 +13,7 @@ const Step1 = (props) => {
                 <div className="col-6 text-center">
                     <div className="col-12">
                         <img className="img-thumbnail"
-                            src={firstImg} />
+                            src={firstImg} alt="Create Password"/>
                     </div>
                     <div className="col-12 mt-3">
                         <p><FormattedMessage id="Form.InfoFirst" /></p>
@@ -22,7 +22,7 @@ const Step1 = (props) => {
 
                 <div className="col-6 text-center">
                     <div className="col-12">
-                        <img className="img-thumbnail" src={secondImg} />
+                        <img className="img-thumbnail" src={secondImg} alt="Create Password"/>
                     </div>
                     <div className="col-12 mt-3">
                         <p><FormattedMessage id="Form.InfoSec" /></p>

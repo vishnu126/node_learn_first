@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import '../src/component/index.css';
-import App from '../src/component/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "../src/component/index.css";
+import App from "../src/component/App";
 import { IntlProvider } from "react-intl";
 import messages_es from "./locale/es.json";
 import messages_en from "./locale/en.json";

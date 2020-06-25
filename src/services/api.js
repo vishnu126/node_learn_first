@@ -6,10 +6,10 @@ const RESPONSE_KO = {status: 401};
 const submitForm = (pass, repass, optionalQuestion) => 
 	new Promise((resolve, reject) =>
 		setTimeout(() => 
-			pass !== PRUEBA_KO
+			pass === PRUEBA_KO
 			? resolve(RESPONSE_OK)
 			: reject(RESPONSE_KO)
-		, 3000)
+		, 1000)
 )
 
 export {

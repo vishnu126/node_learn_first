@@ -14,8 +14,10 @@
     "Form.ErrorHasOccured":"An error has occured",
     "Form.ErrorMsg":"We have not been able to modify your Master password. Try again later",
     "Form.PassMangerAlreadyCreated":"Your Password Manager is already created",
-    "Form.Acceder":"Access",
+    "Form.Acceder":"Access >",
     "Form.Cancel":"Cancel",
     "Form.Next":"Next",
-    "Form.Success":"Succesfully created the Master Password, Welcome!"
+    "Form.Success":"Succesfully created the Master Password, Welcome!",
+    "Form.BackPass":"Back to Password Manager >"
+
 }

@@ -1,29 +1,26 @@
 
-import React, { Component } from "react";
+import React from "react";
 import error from './error.png';
 import success from './success.png';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
-export const Success = (props) => {
-    return <div className="row p-d">
-        <div className="col-md-2 ">
-            <img src={success} className="float-right" />
+export const Feedback = (props) => {
+    return <section className="col-12 mt mb">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-2">
+                    <img src={props.status === 401 ? error : success} alt="Create Password" className="float-right" />
+                </div>
+                <div className="col-md-6">
+                    <h3>{props.status === 401 ? <FormattedMessage id="Form.ErrorHasOccured" /> : <FormattedMessage id="Form.PassMangerAlreadyCreated" />}</h3>
+                    <p>{props.status === 401 ? <FormattedMessage id="Form.ErrorMsg" /> : <FormattedMessage id="Form.Success" />}</p>
+                </div>
+            </div>
+            <div className="row borderTop">
+                <div className="col-12 text-right">
+                    {props.status === 401 ? <button type="button" className="btn btn-link" onClick={props.backToPasswordManager}><FormattedMessage id="Form.BackPass" /></button> : <button type="button" className="btn btn-link" ><FormattedMessage id="Form.Acceder" /></button>}
+                </div>
+            </div>
         </div>
-        <div className="col-md-6">
-            <h3><FormattedMessage id="Form.PassMangerAlreadyCreated" /></h3>
-            <p><FormattedMessage id="Form.Success" /></p>
-        </div>
-    </div>
-}
-
-export const Error = (props) => {
-    return <div className="row p-d">
-        <div className="col-md-2">
-            <img src={error} className="float-right" />
-        </div>
-        <div className="col-md-6">
-            <h3><FormattedMessage id="Form.ErrorHasOccured" /></h3>
-            <p><FormattedMessage id="Form.ErrorMsg" /></p>
-        </div>
-    </div>
+    </section>
 }
