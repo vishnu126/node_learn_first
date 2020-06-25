@@ -1,0 +1,21 @@
+{
+    "Form.Password":"Create your Master Password",
+    "Form.RetypePassword":"Repeat your Master Password",
+    "Form.Comments":"Create your track to remember your password (Optional)",
+    "Form.CreatePassManager":"Create your Password Manager",
+    "Form.InfoFirst":"Save all your passwords, date any information, forget the paper notes and the unprotected applications",
+    "Form.InfoSec":"create your master key: only you can access your secrets with it",
+    "Form.HowDoesWork":"First you must create a different password for your electronic belongings. You will not be able to recover your password, so remember it well",
+    "Form.HowDoesWorkTitle":"How does it work",
+    "Form.HowCanData":"For example, the number of your card, the PIN and the PUK of your mobile phone, the serial number of any of your devices or any information you need to have in a safe place",
+    "Form.HowCanDataTitle":"What data can you save",
+    "Form.InfoThird":"First you must create a different password for your electronic belongings. You will not be able to recover your password, so remember it well",
+    "Form.InFoFour":"You can also create a track to help you remember your master password",
+    "Form.ErrorHasOccured":"An error has occured",
+    "Form.ErrorMsg":"We have not been able to modify your Master password. Try again later",
+    "Form.PassMangerAlreadyCreated":"Your Password Manager is already created",
+    "Form.Acceder":"Access",
+    "Form.Cancel":"Cancel",
+    "Form.Next":"Next",
+    "Form.Success":"Succesfully created the Master Password, Welcome!"
+}
